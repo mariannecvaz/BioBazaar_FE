@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".Loading"
+    android:statusBarColor="@color/green">
+
+
+    <ImageView
+        android:id="@+id/logoRight"
+        android:layout_width="37.348dp"
+        android:layout_height="58.488dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="156dp"
+        android:layout_toEndOf="@+id/logoMiddle"
+        app:srcCompat="@drawable/logoright" />
+
+    <ImageView
+        android:id="@+id/logoLeft"
+        android:layout_width="39.288dp"
+        android:layout_height="61.619dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="261dp"
+        app:srcCompat="@drawable/logoleft" />
+
+    <ImageView
+        android:id="@+id/logoMiddle"
+        android:layout_width="37.676dp"
+        android:layout_height="80.523dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="245dp"
+        android:layout_toEndOf="@+id/logoLeft"
+        app:srcCompat="@drawable/logomiddle" />
+
+    <ImageView
+        android:id="@+id/logoBioBazaar"
+        android:layout_width="328.718dp"
+        android:layout_height="41.411dp"
+        android:layout_below="@+id/logoMiddle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        app:srcCompat="@drawable/logobiobazaar" />
+
+    <ImageView
+        android:id="@+id/logoPhrase"
+        android:layout_width="233.934dp"
+        android:layout_height="39.924dp"
+        android:layout_below="@+id/logoBioBazaar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="67dp"
+        app:srcCompat="@drawable/logophrase" />
+
+</RelativeLayout>

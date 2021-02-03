@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="146dp"
+        android:alpha="0.15"
+        app:srcCompat="@drawable/icon" />
+
+    //No favorites phrase
+
+    //Go to catalog
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="313dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="@string/noFavorites"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnCatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="405dp"
+        android:background="@color/light"
+        android:fontFamily="@font/rubik_light"
+        android:text="Ver Catálogo"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="68dp"
+        android:foreground="@color/white" />
+
+    //Number items
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="103dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="@string/items" />
+
+    //Page lable
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="@string/favorites"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</RelativeLayout>

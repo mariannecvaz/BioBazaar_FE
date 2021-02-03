@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Filters.ProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="10000dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="151dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:text="Bolsa de Sisal para Cosmética Sólida – Banbu"
+                android:fontFamily="@font/rubik_medium"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_light"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Preço €" />
+
+            <ImageView
+                android:id="@+id/bagButton"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="19dp"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/ic_carrinho" />
+
+            <ImageView
+                android:id="@+id/likeButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="86dp"
+                android:layout_toStartOf="@+id/bagButton"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/ic_favorito" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="30dp"
+                android:text="TextView" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="1dp"
+        android:foreground="@color/white" />
+
+    //Back button
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="99dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_seta" />
+
+    //Page lable
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="ACESSÓRIOS DE BANHO"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shoppingView"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/bolsasisal" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textColor="@color/green"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/removeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:text="X"
+            android:backgroundTint="@color/grey" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/orderView"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/bolsasisal" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textColor="@color/green"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

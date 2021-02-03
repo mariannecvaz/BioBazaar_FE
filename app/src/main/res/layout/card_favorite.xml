@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favoriteView"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/bolsasisal" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textColor="@color/green"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/imgProduct"
+            android:fontFamily="@font/rubik_light"
+            android:text="bhfsjkdl"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/white"
+            android:text="X" />
+
+        <ImageView
+            android:id="@+id/btnBag"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/removeBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_carrinho" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

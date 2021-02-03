@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bntOrders"
+        android:layout_marginTop="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bntdetails"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="168dp"
+                android:layout_marginEnd="92dp"
+                android:text="@string/order" />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    //Tab
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="412dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
+        android:foreground="@color/light" />
+
+    //Voltar para trás
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="598dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="USERNAME"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light"
+        app:srcCompat="@drawable/ic_seta" />
+
+    <Button
+        android:id="@+id/bntOrders"
+        android:layout_width="412dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/bar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/white"
+        android:enabled="false"
+        android:fontFamily="@font/rubik_light"
+        android:text="@string/orders"
+        android:textAlignment="textStart"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="23dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/bar"
+        android:layout_alignBottom="@+id/bntOrders"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="14dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:srcCompat="@drawable/ic_carrinho" />
+
+
+</RelativeLayout>
